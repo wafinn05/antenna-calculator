@@ -7,7 +7,7 @@ interface ExportButtonsProps {
 
 function formatResultsAsText(data: PatchAntennaResponse): string {
   // ... (keep same logic, just omit the long string copy-paste here for brevity, wait I need to provide full content)
-  const { result, advanced_result, input_echo } = data;
+  const { result, input_echo } = data;
   const lines: string[] = [
     'PatchCalc — Microstrip Patch Antenna Results',
     '--------------------------------------------',

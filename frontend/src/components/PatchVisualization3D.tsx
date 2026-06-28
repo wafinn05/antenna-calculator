@@ -1,6 +1,6 @@
-import React, { useMemo, useRef, useState, useEffect } from 'react';
+import React, { useMemo } from 'react';
 import { Canvas } from '@react-three/fiber';
-import { OrbitControls, Html, Center, Bounds } from '@react-three/drei';
+import { OrbitControls, Html, Bounds } from '@react-three/drei';
 import * as THREE from 'three';
 
 export interface PatchAntenna3DProps {
