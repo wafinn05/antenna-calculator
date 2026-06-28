@@ -283,10 +283,21 @@ input:checked + .toggle-slider:before {
   color: #333;
   cursor: pointer;
 }
-.checkbox-row input[type="checkbox"] {
+.checkbox-accent {
   accent-color: var(--color-primary);
   width: 16px;
   height: 16px;
+  margin-right: 8px;
+}
+.checkbox-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+.cursor-pointer {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
 /* Button */
@@ -539,6 +550,38 @@ input:checked + .toggle-slider:before {
 /* Utilities */
 .text-primary {
   color: var(--color-primary) !important;
+}
+
+.flex-center-gap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.flex-center-gap-sm {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.mt-2 { margin-top: 8px !important; }
+.mt-4 { margin-top: 16px !important; }
+.mt-8 { margin-top: 32px !important; }
+.mb-0 { margin-bottom: 0 !important; }
+.ml-2 { margin-left: 8px !important; }
+
+/* Advanced Section transitions */
+.advanced-section {
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+}
+.advanced-section.enabled {
+  max-height: 200px;
+  opacity: 1;
+}
+.advanced-section.disabled {
+  max-height: 0;
+  opacity: 0;
 }
 
 /* ==========================================================================
